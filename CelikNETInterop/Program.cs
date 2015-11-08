@@ -10,9 +10,12 @@ namespace CelikNET
 		{
 			try
 			{
-				Interop.Startup();
-				CardData cardData = Interop.Read();
-				Interop.Cleanup();
+				using (Interop interop = new Interop())
+				{
+					interop.Startup();
+					CardData cardData = interop.Read();
+					interop.Cleanup();
+				}
 			}
 			catch (InvalidApiVersionException ex)
 			{

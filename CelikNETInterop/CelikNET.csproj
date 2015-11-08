@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CelikApiWrapper.cs" />
     <Compile Include="Data\CardData.cs" />
     <Compile Include="Data\PEID_DOCUMENT_DATA.cs" />
     <Compile Include="Data\PEID_FIXED_PERSONAL_DATA.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadingFailedException.cs" />
+    <Compile Include="StaticData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
